@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not an AI chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="server-message" style="#000000">
+        {{ reply }}
+    </div>
+    <form method="POST" action="/">
+        <h1 style="#000000">Это обычный текстовый абзац (p). В нем текст выглядит стандартно.</h1>
+        <div class="terminal-loader">
+          <div class="terminal-header">
+            <div class="terminal-title">Status</div>
+            <div class="terminal-controls">
+              <div class="control close"></div>
+              <div class="control minimize"></div>
+              <div class="control maximize"></div>
+            </div>
+          </div> <textarea class="input" name="user" placeholder="Введите запрос: "></textarea>
+
+        </div> <button type="submit" class="glow-on-hover">Отправить</button>
+
+    </form>
+    <img src="{{ url_for('static', filename='national-jelly-filled-donut-day-jelly-filled-donut-day.gif') }}"  alt="Неработающая гифкa">
+
+</body>
+</html>
